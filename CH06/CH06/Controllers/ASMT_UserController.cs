@@ -18,7 +18,7 @@ namespace CH06.Controllers
         public ActionResult Index()
         {
             
-            ViewBag.AAA = "BBB";
+            ViewBag.AAA = "CCC";
             return View(db.ASMT_User.ToList());
         }
 
