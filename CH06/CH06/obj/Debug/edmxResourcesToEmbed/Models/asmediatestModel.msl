@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="asmedia_testModelStoreContainer" CdmEntityContainer="asmedia_testEntities">
+    <EntitySetMapping Name="ASMT_User">
+      <EntityTypeMapping TypeName="asmedia_testModel.ASMT_User">
+        <MappingFragment StoreEntitySet="ASMT_User">
+          <ScalarProperty Name="UpdTime" ColumnName="UpdTime" />
+          <ScalarProperty Name="OnJob" ColumnName="OnJob" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Manager_lv01" ColumnName="Manager_lv01" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="OnBoardDate" ColumnName="OnBoardDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ExtNumber" ColumnName="ExtNumber" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserEmpID" ColumnName="UserEmpID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

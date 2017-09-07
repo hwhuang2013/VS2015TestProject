@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="asmedia_testModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="asmedia_testEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ASMT_User" EntityType="asmedia_testModel.ASMT_User" />
+  </EntityContainer>
+  <EntityType Name="ASMT_User">
+    <Key>
+      <PropertyRef Name="UserEmpID" />
+    </Key>
+    <Property Name="UserEmpID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DeptID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DeptName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ExtNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OnBoardDate" Type="DateTime" Precision="3" />
+    <Property Name="JobTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Manager_lv01" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Role" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OnJob" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="UpdTime" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

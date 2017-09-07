@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ASMT_User>
+
+@{
+    ViewBag.Title = "DataList";
+}
+
+<h2>DataList</h2>
+
+<ul>
+    ViewBag.Name:@ViewBag.Name
+
+    @using (@Html.BeginForm("CheckInput", "ASMT_User"))
+    {
+        <input type="text" name="name" /><br />
+        <span style="color:red">@TempData["Error"]</span><br />
+        <input type="submit" value="send" />
+
+
+    }
+
+
+
+    @*<table>
+
+        @foreach (var item1 in Model)
+        {
+            <tr>
+                <td>Model</td>
+                <td>@item1.UserEmpID</td>
+                <td>@item1.UserID</td>
+                <td>@item1.UserName</td>
+                <td>@item1.DeptName</td>
+            </tr>
+            }
+
+
+
+
+        @foreach (var item in ViewBag.DataList as List<ASMT_User>)
+        {
+            <tr>
+                <td>@item.UserEmpID</td>
+                <td>@item.UserID</td>
+                <td>@item.UserName</td>
+            </tr>
+        }
+
+
+    </table>*@
+
+</ul>
+
